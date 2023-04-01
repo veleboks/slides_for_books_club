@@ -30,6 +30,7 @@ const (
 	Julia      = "julia"
 	Cpp        = "cpp"
 	Swift      = "swift"
+  Io         = "io"
 )
 
 // Languages is a map of supported languages with their extensions and commands
@@ -99,4 +100,8 @@ var Languages = map[string]Language{
 		Extension: "swift",
 		Commands:  cmds{{"swift", "<file>"}},
 	},
+  Io: {
+    Extension: "io",
+    Commands: cmds{{"io", "<file>"}},
+  },
 }
